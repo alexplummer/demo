@@ -1,0 +1,36 @@
+
+// Work listing
+// ============
+// A listing for a piece of work
+
+.work-listing {
+    background: #f5f5f5;
+    padding: $size-m;
+    margin-bottom: $size-l;
+    position: relative;
+
+    >* {
+        margin-left: 230px;
+    }
+
+    img {
+        @include shadow();
+        border-radius: 50%;
+        width: 200px;
+        border: 1px solid #bbb;
+        margin-right: $size-m;
+        position: absolute;
+        margin-left: 0;
+    }
+    ul {
+        position: relative;
+        left: $size-m;
+    }
+    a {
+        display: block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: calc(100% - 230px);
+    }
+}

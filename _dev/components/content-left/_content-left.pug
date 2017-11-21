@@ -1,0 +1,32 @@
+
+//- Content left
+//- ============
+//- (Write description here)
+
+//- Includes
+include ../work-listing/_work-listing
+
+mixin content-left()
+    
+    .content-left
+
+        - var title = "Leatherhead Social Heatmap"
+        - var description = "A React based map using OpenLayers and the Overpass API."
+        - var tech = ["React","OpenLayers","Overpass API", "C3.js"]
+        - var link = "http://alexplummer.com/sites/heatmap"
+        - var img = "img/media/thumb-heatmap.jpg"
+        +work-listing(title, description, tech, link, img)
+            
+        - var title = "Euromoney Hackathon 2017"
+        - var description = "A semantically driven portal for any type of entity."
+        - var tech = ["Pug","ES6","C3.js","A variety of APIs"]
+        - var link = "http://alexplummer.com/sites/euromoney-hackathon-17/topic.html"
+        - var img = "img/media/thumb-emhackathon.jpg"
+        +work-listing(title, description, tech, link, img)
+
+        - var title = "Covered Bonds Map 2014"
+        - var description = "A legacy version of the Covered Bonds map."
+        - var tech = ["Leaflet.js","Mapbox"]
+        - var link = "http://alexplummer.com/sites/cb11"
+        - var img = "img/media/thumb-cb14.jpg"
+        +work-listing(title, description, tech, link, img)

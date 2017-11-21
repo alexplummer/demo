@@ -1,0 +1,20 @@
+
+//- Work listing
+//- ============
+//- A listing for a piece of work
+
+//- Includes
+
+mixin work-listing(title, description, tech, link, img)
+    
+    .work-listing
+
+        img(src!=img)
+        h3= title
+        p= description
+        p 
+            strong Tech used:
+        ul
+            each val in tech
+                li= val
+        a(href!=link target="_blank")= link

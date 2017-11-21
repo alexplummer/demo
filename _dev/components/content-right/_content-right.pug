@@ -1,0 +1,32 @@
+
+//- Content right
+//- ============
+//- (Write description here)
+
+//- Includes
+include ../work-listing/_work-listing
+
+mixin content-right()
+    
+    .content-right
+
+        - var title = "Covered Bonds Map 2017"
+        - var description = "A highly popular map that lists national covered bonds data."
+        - var tech = ["amCharts","C3.js","Fractal.js"]
+        - var link = "http://www.globalcapital.com/maps/coveredbonds/2017/index.html"
+        - var img = "img/media/thumb-cb.jpg"
+        +work-listing(title, description, tech, link, img)
+
+        - var title = "Euromoney Release Dashboard"
+        - var description = "An internal dashboard for monitoring releases."
+        - var tech = ["UX user interviews","UX research surveys","Axure wireframing"]
+        - var link = "http://alexplummer.com/sites/demo/img/media/em_dashboard.jpg"
+        - var img = "img/media/thumb-dashboard.jpg"
+        +work-listing(title, description, tech, link, img)
+
+        - var title = "Personal React Framework"
+        - var description = "I use this to create websites, apps and CouchCMS integrations."
+        - var tech = ["Gulp","Pug","Sass","React/ES6"]
+        - var link = "https://github.com/alexplummer/framework-react"
+        - var img = "img/media/thumb-framework.jpg"
+        +work-listing(title, description, tech, link, img)
